@@ -80,12 +80,13 @@ h3 {
 }
 
 .intro {
-    background: linear-gradient(135deg, #D2B48C, #927438);
+    background: linear-gradient(135deg, #D2B48C, #c3ae84);
     padding: 60px 40px;
     border-top: 5px solid #8B5E3C;
     border-bottom: 5px solid #8B5E3C;
     text-align: center;
 }
+
 
 .intro p {
     font-size: 1.25em;
