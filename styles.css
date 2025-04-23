@@ -2,123 +2,115 @@ body {
     font-family: 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5dc;
-    color: #5a4e42;
+    background-color: #f5e1c0;
+    color: #4a2c18;
 }
 
 header {
-    background-color: #8B5E3C;
-    padding: 30px 20px;
+    background-color: #4a2c18;
+    padding: 100px 20px;
     text-align: center;
-    border-bottom: 5px solid #D2B48C;
 }
 
 header h1 {
-    color: #fff;
     font-size: 3.5em;
-    font-weight: bold;
-    margin: 0;
-    letter-spacing: 2px;
     text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0 0;
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
 }
 
 nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 600;
-    padding: 12px 25px;
-    background-color: #D2B48C;
-    border-radius: 30px;
-    font-size: 1.1em;
-    transition: 0.3s ease;
+    font-size: 1.2em;
     text-transform: uppercase;
+    color: white;
+    background-color: #8b5e3c;
+    padding: 12px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #8B5E3C;
-    color: #fff;
+    background-color: #f5e1c0;
+    color: #4a2c18;
     transform: scale(1.05);
-    text-decoration: underline;
 }
 
 section {
-    padding: 60px 30px;
+    padding: 80px 30px;
     max-width: 1200px;
     margin: auto;
+    text-align: center;
 }
 
 h2 {
-    font-size: 2.6em;
-    text-align: center;
-    color: #8B5E3C;
+    font-size: 2.8em;
+    color: #4a2c18;
     margin-bottom: 40px;
     font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: capitalize;
-    border-bottom: 4px solid #D2B48C;
+    border-bottom: 5px solid #8b5e3c;
+    display: inline-block;
     padding-bottom: 10px;
 }
 
 h3 {
-    color: #8B5E3C;
+    color: #4a2c18;
     font-size: 2em;
-    margin-top: 0;
     margin-bottom: 15px;
-    text-align: center;
     font-weight: 600;
     text-transform: uppercase;
 }
 
 .intro {
-    background: linear-gradient(135deg, #D2B48C, #c3ae84);
-    padding: 60px 40px;
-    border-top: 5px solid #8B5E3C;
-    border-bottom: 5px solid #8B5E3C;
-    text-align: center;
-}
-
-
-.intro p {
-    font-size: 1.25em;
-    color: #5a4e42;
-    line-height: 1.8;
-    max-width: 700px;
-    margin: auto;
+    background-image: url('australian-scenery.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 30px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    font-size: 1.5em;
+    font-weight: bold;
+    border-top: 5px solid #4a2c18;
+    border-bottom: 5px solid #4a2c18;
 }
 
 .card {
-    background-color: #fff;
+    background-color: #f5e1c0;
+    color: #4a2c18;
     border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     margin-bottom: 50px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
-    width: 230px;
-    height: 230px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid #8B5E3C;
+    border: 5px solid #4a2c18;
     margin-bottom: 20px;
-    transition: transform 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .card img:hover {
@@ -126,19 +118,34 @@ h3 {
 }
 
 .card p {
-    color: #5a4e42;
-    font-size: 1.1em;
-    line-height: 1.6;
-    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+.video {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.video iframe {
+    border: 5px solid #4a2c18;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    transition: transform 0.3s ease;
+}
+
+.video iframe:hover {
+    transform: scale(1.05);
 }
 
 footer {
-    background-color: #8B5E3C;
+    background-color: #4a2c18;
     color: white;
     text-align: center;
-    padding: 20px;
-    font-size: 0.95em;
-    margin-top: 60px;
+    padding: 30px;
+    font-size: 1em;
 }
 
 footer p {
